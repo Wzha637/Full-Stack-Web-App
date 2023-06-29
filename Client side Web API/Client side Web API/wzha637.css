@@ -1,0 +1,70 @@
+.navbar {
+    color : white;
+    padding: 16px;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+.navbar a:hover{
+    background-color : orange
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 16px;
+}
+.home {
+  background-color: #04AA6D;
+}
+
+.center{
+    text-align: center;
+}
+
+.end {
+    float: right;
+}
+
+.body {
+    background-color : #f4f4f4
+}
+.left {
+    float: left;
+}
+.button {
+    background-color: 	#ffb6c1;
+    padding: 15px 32px;
+    margin: 4px 2px;
+}
+
+.button2 {
+    background-color: #98fb98;
+    padding: 12px 25px;
+    margin: 4px 2px;
+    border-radius: 7px;
+}
+
+.button3 {
+    background-color: #dbdada;
+    padding: 12px 15px;
+    margin: 4px 2px;
+    border-radius: 7px;
+}
+
+
+#window {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    width: 30%;
+    height: 20%;
+    border: 2px solid white;
+    background-color: #dbdada;
+    z-index: 9999;
+    overflow: auto;
+}
+
+#staffTable {
+    position:absolute;
+}

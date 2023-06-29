@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southern Hemisphere Institute of Technology</title>
+    <link href="wzha637.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="http://localhost:5000//logo-192x192.png" type="image/png">
+
+</head>
+<body class="body">
+        <script src="wzha637.js"></script>
+        <div class="navbar">
+            <a class="home"onclick="home();">🏠 Home</a>
+            <a onclick="staff();">📰 Staff</a>
+            <a onclick="shop();">🛒 Institute Shop</a>
+            <a onclick="register();">👩 Register</a>
+            <a onclick="guestBook();">📖 Guest Book</a>
+            <a class="end"onclick="login();">💧 Login</a>
+        </div>
+        <div id="checkLogin"></div>
+
+        <div id="home">
+            <h1>🏠 Home</h1>
+            <div class="center">
+            <img src="http://localhost:5000/api/GetLogo" alt="Picture of the Logo" width="40%" height="50%">
+            <h3>Southern Hemisphere Institute of Technology is a premiere establishment providing world-class higher education right here in New Zealand. </h3>
+            </div>
+
+        </div>
+
+        <div id="staff">
+            <h1>📰 Staff<img class="end" src="http://localhost:5000/api/GetLogo" alt="Picture of the Logo" width="15%" height="25%"></h1>
+            <hr width="50%" class="left"/>
+            <table id="staffTable"></table>
+
+        </div >
+
+        <div id="shop">
+            <h1>🛒 Institute Shop<img class="end" src="http://localhost:5000/api/GetLogo" alt="Picture of the Logo" width="15%" height="25%"></h1>
+            <hr width="50%" class="left"/>
+            <h3><br>Search</br></h3>
+            <input type="Search" id="itemSearch" onkeypress="searchItem()" "name="name" value="" placeholder="Search products"/>
+            <table id="itemTable"></table>
+            <div id="window"></div>
+        </div>
+
+        <div id="register">
+            <h1>👩 Register<img class="end" src="http://localhost:5000/api/GetLogo" alt="Picture of the Logo" width="15%" height="25%"></h1>
+            <hr width="50%" class="left"/>
+            <div>
+                <p><br>Username</br></p>
+                <input type="text" id="nameInput">
+            </div>
+            <div>
+                <p>Password</p>
+                <input type="text" id="passInput">
+            </div>
+            <div>
+                <p>Address</p>
+                <input type="text" id="addrInput">
+            </div>
+            <button class="button2" onclick="registerUser();">Submit</button>
+            <div id="result"></div>
+
+
+        </div>
+
+        <div id="guestBook">
+            <h1>📖 Guest Book<img class="end" src="http://localhost:5000/api/GetLogo" alt="Picture of the Logo" width="15%" height="25%"></h1>
+            <hr width="50%" class="left"/>
+            <div>
+                <p><br>Username</br></p>
+                <input type="text" id="guestName">
+            </div>
+            <div>
+                <p>Comment</p>
+                <input type="text" id="comment">
+            </div>
+            <button class="button2" onclick="writeComment();">Submit</button>
+            <h2>Comment Board</h2>
+            <div id="commentBoard"></div>
+        </div>
+
+        <div id="login">
+            <h1>💧 Login<img class="end" src="http://localhost:5000/api/GetLogo" alt="Picture of the Logo" width="15%" height="25%"></h1>
+            <hr width="50%" class="left"/>
+            <div>
+                <p><br>Username</br></p>
+                <input type="text" id="loginName">
+            </div>
+            <div>
+                <p>Password</p>
+                <input type="text" id="loginPassword">
+            </div>
+            <div>
+            <button class="button2" onclick="userLogin();">Submit</button>
+            </div>
+        </div>
+
+</body>
+</html>
